@@ -2,29 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>HEAPDO</title>
+    <link type="image/x-icon" href="%PUBLIC_URL%/images/cloud.png" rel="icon">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/feather.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/aos.css">
+    <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/style.css">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +30,84 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+      <script src="%PUBLIC_URL%/assets/js/jquery-3.6.0.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/bootstrap.bundle.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/owl.carousel.min.js"></script>
+
+      <script src="%PUBLIC_URL%/assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+      <script src="%PUBLIC_URL%/assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/circle-progress.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/feather.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/plugins/select2/js/select2.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/slick.js"></script>
+      <script src="%PUBLIC_URL%/assets/plugins/dropzone/dropzone.min.js"></script>
+      <script src="%PUBLIC_URL%/assets/plugins/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/profile-settings.js"></script>
+      <script src="%PUBLIC_URL%/assets/js/aos.js"></script>
+     
+      <script src="%PUBLIC_URL%/assets/js/script.js"></script>
+      
 </html>
+<script>
+  $('.testi2').owlCarousel({
+loop: true,
+margin: 20,
+nav: false,
+dots: true,
+autoplay: true,
+responsiveClass: true,
+responsive: {
+  0: {
+    items: 1,
+    nav: false
+  },
+  1170: {
+    items: 1
+  }
+}
+});
+
+$(function() {
+  // 1) ASSIGN EACH 'DOT' A NUMBER
+  dotcount = 1;
+  $('.testi2 .owl-dot').each(function() {
+      $(this).addClass('dotnumber' + dotcount);
+      $(this).attr('data-info', dotcount);
+      dotcount = dotcount + 1;
+  });
+  // 2) ASSIGN EACH 'SLIDE' A NUMBER
+  slidecount = 1;
+  $('.testi2 .owl-item').not('.cloned').each(function() {
+      $(this).addClass('slidenumber' + slidecount);
+      slidecount = slidecount + 1;
+  });
+  $('.testi2 .owl-dot').each(function() {
+      grab = jQuery(this).data('info');
+      slidegrab = $('.slidenumber' + grab + ' img').attr('src');
+      console.log(slidegrab);
+      $(this).css("background-image", "url(" + slidegrab + ")");
+  });
+  // THIS FINAL BIT CAN BE REMOVED AND OVERRIDEN WITH YOUR OWN CSS OR FUNCTION, I JUST HAVE IT
+  // TO MAKE IT ALL NEAT 
+
+});
+</script>
+<script>
+  /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "300px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<script>
+  
+document.getElementById('close').onmousedown = function(e) {
+e.preventDefault();
+document.getElementById('info').style.display = 'none';
+return false;
+};
+</script>

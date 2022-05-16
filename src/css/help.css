@@ -1,0 +1,75 @@
+.help-h1{
+    text-align: center;
+}
+
+
+.help-p{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(190, 190, 243, 0.5);
+    
+    
+
+}
+.help-img{
+    margin-top: 10px;
+}
+.help-img > img{
+    width: 450px;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+
+  
+}
+
+
+
+.patient-details-div{
+    width: 500px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+.patient-details{
+    width: 60%;
+}
+
+.fund-meter{
+    width: 100%;
+    padding: 10px;
+  
+}
+.vertical{
+    width: 400px;
+    height: fit-content;
+    
+}
+.cause{
+    width: 100%;
+    font-size: 40px;
+    color: rgb(65, 65, 237);
+
+}
+
+.fund-btn{
+    padding: 10px;
+    background-color: rgb(243, 142, 229);
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.docterlist2{
+    margin-top: 30%;
+}

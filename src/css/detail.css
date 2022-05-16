@@ -1,0 +1,44 @@
+.detail{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: auto;
+    margin-top: 16%;
+}
+.search-ad{
+    display: flex;
+}
+.detail-ad{
+    position: absolute;
+    right: 0;
+    top: 30%;
+}
+@media screen  and (max-width:786px){
+    .detail-ad{
+        display: none;
+    }
+    
+}
+.d-left{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.d-left > p{
+    width: 100%;
+}
+.d-right{
+    width: 400px;
+    
+}
+.d-img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.d-right-sidebar{
+    width: 70%;
+}

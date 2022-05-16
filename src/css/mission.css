@@ -1,0 +1,81 @@
+.mission{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(190, 190, 243, 0.5);
+    margin-top: 20px;
+}
+@media screen and (max-width:786px) {
+    .mission{
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: rgba(190, 190, 243, 0.5);
+
+    }
+    .vm-img{
+        display: none;
+    }
+    
+}
+
+.m-img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    background-color: rgb(56, 56, 113,0.5);
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px 2px #888888;
+}
+.mission-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: auto;
+}
+.mission-content p{
+    width: 100%;
+    padding: 10px;
+    font-weight: 300;
+}
+.mbtn{
+    border: 1px solid rgb(137, 227, 227);
+    width: 100px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(79, 158, 158);
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+.kbtn{
+    border: 1px solid rgb(137, 227, 227);
+    width: 100px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(214, 153, 242);
+    color: aliceblue;
+    margin-bottom: 2px;
+}
+
+.hblog >h1{
+    text-align: center;
+    color: blue;
+    font-size: 55px;
+  
+}
+.hblog >p{
+    display: block;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  
+}

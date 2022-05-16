@@ -1,0 +1,120 @@
+.sidebar{
+   margin-top: 120%;
+    
+    position: fixed;
+    transform: translate(-30rem);
+    width: 20rem;
+    background-color: #f0f0f0;
+    height: 100%;
+    transition: all .05s;
+    
+
+}
+.sidebar.open{
+   transform: translate(0);
+}
+.sidebar-close-button{
+   border-radius: 50%;
+   border: .1rem #000000;
+   width: 3rem;
+   height: 3rem;
+   padding: .5rem;
+   font-size: 2rem;
+   padding-top:0;
+   cursor: pointer;
+   position: absolute;
+   right: .5rem;
+   top: 1.5rem;
+   color: blueviolet;
+}
+
+.sidemodel{
+   width: 300px;
+   height: 100vh;
+   position: absolute;
+   top: 65%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+   z-index: 1;
+   background-color: antiquewhite;
+   background-color: rgb(29, 31, 194);
+   border: none;
+   overflow: scroll;
+
+}
+
+.smmenu{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+
+.smmenu a{
+   color: white;
+   text-decoration: none;
+   font-size: 15px;
+   font-family: 'Roboto';
+   font-weight: 300;
+   margin-top: 10px;
+   
+   
+}
+.smmenu a::after{
+   content: '';
+   display: block;
+   width: 0;
+   height: 3px;
+   background-color: aliceblue;
+   transition: all 0.5s;
+
+}
+.smmenu a:hover::after{
+   width: 100%;
+}
+.option{
+   color: white;
+   background-color: aliceblue;
+   
+}
+.menuicon{
+   display: none;
+}
+.menuicon > .MuiSvgIcon-root{
+   color: blue;
+   font-size: 50px;
+   margin-top: -130%;
+   
+   
+
+}
+.bar-icon{
+   display: none;
+}
+.dsidebar{
+   background-color: aqua;
+}
+.dsidebar-content{
+   height: fit-content;
+   background-color: rgb(0, 0, 0,0.5);
+
+}
+.dsidebar-content a{
+   font-size: small;
+}
+.dsidebar-content:hover > a{
+   background-color: none;
+}
+
+
+   
+@media screen and (max-width:786px){
+   .menuicon{
+      display: flex;
+    
+      
+   }
+
+   
+}
